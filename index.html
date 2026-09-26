@@ -20,12 +20,22 @@
     <a href="#jatayu">Jatayu</a>
     <a href="#explore">Explore</a>
     <a href="#visit">Visit</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
+<div class="scroll-progress" aria-hidden="true"><span></span></div>
+<div class="scroll-bird" aria-hidden="true">
+  <div class="eagle-rig">
+    <img class="eagle-body" src="assets/eagle-body.png" alt="">
+    <img class="eagle-wing eagle-wing-left" src="assets/eagle-left-wing.png" alt="">
+    <img class="eagle-wing eagle-wing-right" src="assets/eagle-right-wing.png" alt="">
+  </div>
+  <div class="feather-trail" aria-hidden="true"></div>
+</div>
 <section id="home" class="hero">
-  <img class="hero-image" src="assets/jatayu-aerial.jpg" alt="Aerial view of Jatayu sculpture at Chadayamangalam">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true"><source src="assets/jatayu-motion.mp4" type="video/mp4"></video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="eyebrow">Kollam · Kerala</div>
@@ -43,13 +53,13 @@
 </section>
 
 <section class="quickbar">
-  <a href="#history"><b>History</b><span>Ay · Pandya · Heritage</span></a>
+  <a href="#history"><b>History</b><span>Place · Story · Identity</span></a>
   <a href="#jatayu"><b>Jatayu</b><span>Story · Sculpture · Legacy</span></a>
   <a href="#explore"><b>Explore</b><span>Nature · Culture · Adventure</span></a>
   <a href="#visit"><b>Visit</b><span>Plan your journey</span></a>
 </section>
 
-<section id="history" class="section compact">
+<section id="history" class="section compact reveal-on-scroll">
   <div class="section-top">
     <div><span class="number">01</span><span class="label">THE PLACE</span></div>
     <span class="section-note">Kollam District · Kerala</span>
@@ -70,7 +80,7 @@
   </div>
 </section>
 
-<section id="jatayu" class="section jatayu-section">
+<section id="jatayu" class="section jatayu-section reveal-on-scroll">
   <div class="section-top light-line">
     <div><span class="number">02</span><span class="label">THE STORY</span></div>
     <span class="section-note">Jatayupara · Chadayamangalam</span>
@@ -94,12 +104,15 @@
 
   <div class="image-strip">
     <button class="gallery-card" data-full="assets/jatayu-aerial.jpg"><img src="assets/jatayu-aerial.jpg" alt="Aerial view of Jatayu Earth's Center"><span>Aerial view</span></button>
+    <button class="gallery-card" data-full="assets/jatayu-mahendrajal-front.jpg"><img src="assets/jatayu-mahendrajal-front.jpg" alt="Jatayu sculpture and visitor area"><span>Jatayu up close</span></button>
+    <button class="gallery-card" data-full="assets/jatayu-wide.jpg"><img src="assets/jatayu-wide.jpg" alt="Wide view of Jatayu sculpture"><span>Wide view</span></button>
     <button class="gallery-card" data-full="assets/jatayu-top.jpg"><img src="assets/jatayu-top.jpg" alt="Top view of Jatayu sculpture"><span>Jatayupara</span></button>
-    <button class="gallery-card" data-full="assets/jatayu-view.jpg"><img src="assets/jatayu-view.jpg" alt="Visitor area at Jatayu Earth's Center"><span>Visitor experience</span></button>
+    <button class="gallery-card" data-full="assets/jatayu-visitor.jpg"><img src="assets/jatayu-visitor.jpg" alt="Visitor at the Jatayu grounds"><span>Visitor experience</span></button>
+    <button class="gallery-card" data-full="assets/jatayu-view.jpg"><img src="assets/jatayu-view.jpg" alt="Visitor area at Jatayu Earth's Center"><span>At the landmark</span></button>
   </div>
 </section>
 
-<section class="section landmark">
+<section class="section landmark reveal-on-scroll">
   <div class="landmark-main">
     <div>
       <span class="eyebrow dark-eyebrow">Jatayu Earth's Center</span>
@@ -116,7 +129,7 @@
   </div>
 </section>
 
-<section id="explore" class="section explore compact">
+<section id="explore" class="section explore compact reveal-on-scroll">
   <div class="section-top">
     <div><span class="number">03</span><span class="label">EXPLORE</span></div>
     <span class="section-note">Beyond Jatayupara</span>
@@ -133,7 +146,7 @@
   </div>
 </section>
 
-<section id="visit" class="section visit">
+<section id="visit" class="section visit reveal-on-scroll">
   <div class="section-top">
     <div><span class="number">04</span><span class="label">PLAN YOUR VISIT</span></div>
     <span class="section-note">Chadayamangalam · Kerala 691534</span>
@@ -159,7 +172,7 @@
 
 <footer>
   <div><strong>CHADAYAMANGALAM<span>.IN</span></strong><p>History · Heritage · Jatayu · Nature · Adventure</p></div>
-  <div class="footer-right">An independent information website concept for Chadayamangalam, Kerala.</div>
+  <div class="footer-right"><a class="footer-contact" href="contact.html">Contact Us ↗</a><br>An independent information website concept for Chadayamangalam, Kerala.</div>
 </footer>
 
 <script src="script.js"></script>

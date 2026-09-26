@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Contact Mahendrajal Magic World in Poredom, Chadayamangalam, Kollam, Kerala.">
+<title>Contact Us — Chadayamangalam.in</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><span class="logo-symbol">𑁍</span><span>CHADAYAMANGALAM<small>.IN</small></span></a>
+  <button class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="nav">
+    <a href="index.html#history">History</a>
+    <a href="index.html#jatayu">Jatayu</a>
+    <a href="index.html#explore">Explore</a>
+    <a href="index.html#visit">Visit</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="contact-page">
+  <section class="contact-hero">
+    <div class="contact-hero-inner">
+      <span class="eyebrow">GET IN TOUCH</span>
+      <h1>Contact <em>Us.</em></h1>
+      <p>Have a question, suggestion or something to share about Chadayamangalam? We'd be happy to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <div class="contact-grid">
+      <div class="contact-intro">
+        <span class="number">01</span>
+        <span class="label">CONTACT DETAILS</span>
+        <h2>Mahendrajal<br><em>Magic World.</em></h2>
+        <p>Our contact point in Poredom, Chadayamangalam, Kollam, Kerala.</p>
+        <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Mahendrajal+Magic+World%2C+Poredom%2C+Chadayamangalam%2C+Kollam%2C+Kerala+691534" target="_blank" rel="noopener">Open location in Maps ↗</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-item">
+          <span class="contact-icon">⌖</span>
+          <div><small>ADDRESS</small><address>Mahendrajal Magic World<br>Poredom P.O.<br>Chadayamangalam, Kollam<br>Kerala - 691534</address></div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">☎</span>
+          <div><small>PHONE</small><a href="tel:+919747710001">+91 97477 10001</a><span class="contact-note">8:00 AM – 8:00 PM</span></div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">✉</span>
+          <div><small>EMAIL</small><a href="mailto:mahi.poredom@gmail.com">mahi.poredom@gmail.com</a><a href="mailto:pillai.manojms@gmail.com">pillai.manojms@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-band">
+    <div>
+      <span class="eyebrow">CHADAYAMANGALAM · KOLLAM · KERALA</span>
+      <h2>Let's stay connected.</h2>
+    </div>
+    <div class="contact-actions">
+      <a href="tel:+919747710001">Call us</a>
+      <a href="mailto:mahi.poredom@gmail.com">Send an email</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div><strong>CHADAYAMANGALAM<span>.IN</span></strong><p>History · Heritage · Jatayu · Nature · Adventure</p></div>
+  <div class="footer-right"><a class="footer-contact" href="index.html">← Back to Chadayamangalam.in</a></div>
+</footer>
+
+<script>
+const menu=document.querySelector('.menu-btn'),nav=document.querySelector('.nav');
+menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)});
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>
