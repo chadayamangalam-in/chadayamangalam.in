@@ -10,7 +10,7 @@
 (() => {
   const cfg = {
     statsUrl: 'https://www.stats4u.net/live/8077471159/stats.json?days=400',
-    liveImageUrl: 'https://www.stats4u.net/c/8077471159-3900.png?rl=1',
+    liveImageUrl: 'https://www.stats4u.net/c/8077471159-3800.svg?rl=1',
     refreshTotalMs: 300000,
     refreshLiveMs: 30000
   };
