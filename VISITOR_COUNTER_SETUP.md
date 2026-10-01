@@ -1,18 +1,9 @@
-# Chadayamangalam.in — Visitor Counter
+# Visitor counter — Chadayamangalam.in
 
-The website now uses the Stats4U counter **#8077471159** as the counting engine.
+Stats4U counter: **8077471159**
 
-The visible design is **not** the Stats4U design. It is the custom Chadayamangalam.in counter in the top-right of the header:
+The website displays a custom **TOTAL VISITORS** counter in the header. The visible design is created by Chadayamangalam.in; the Stats4U widget is kept hidden and is used only for counting.
 
-- TOTAL VISITORS — cumulative visitor number
-- LIVE NOW — current visitors reported by Stats4U
-- Animated number transition
-- Live pulse indicator
-- Responsive desktop/mobile layout
+The display reads Stats4U's public JSON endpoint and uses `totals.all`, which is the lifetime visitor total shown on the counter's statistics page. Stats4U documents that the JSON endpoint is publicly readable and requires no sign-in.
 
-The Stats4U script is embedded invisibly so the site's own design remains unchanged.
-
-Stats4U's public statistics endpoint is read directly by `visitor-counter.js`; no API key, VPS, database or Google Analytics is used. The endpoint is public and supports cross-origin requests. Stats4U documents that the endpoint can be read from a site's own script and may cache responses for up to five minutes.
-
-Counter statistics / management:
-https://www.stats4u.net/live/8077471159
+The separate LIVE NOW number has intentionally been removed from the website display to keep the implementation simple and reliable.
