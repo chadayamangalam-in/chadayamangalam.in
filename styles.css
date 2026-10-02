@@ -170,3 +170,21 @@ footer strong{font:700 24px "Playfair Display";color:#e4edb4}footer strong span{
 @media(prefers-reduced-motion:reduce){.visitor-total.counting{animation:none}.visitor-live-dot{animation:none}}
 
 .stats4u-engine{position:absolute;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;left:-10000px;top:auto}
+
+/* ---- Mobile fixes v11.1 ---- */
+html,body{overflow-x:hidden}
+.jatayu-section.section{padding-inline:max(6vw,calc((100vw - 1120px)/2))}
+@media(max-width:900px){
+  .jatayu-section.section{padding-inline:6vw;padding-block:70px}
+  .jatayu-copy,.jatayu-photo,.story-more{min-width:0}
+  .jatayu-copy>p,.story-more{max-width:100%}
+  .image-strip{margin-inline:-6vw;padding-inline:6vw;scroll-padding-inline:6vw}
+  .timeline{margin-top:60px}
+}
+@media(max-width:560px){
+  h1{font-size:11.2vw;letter-spacing:-.04em;max-width:100%}
+  h2{font-size:clamp(36px,11vw,52px);overflow-wrap:break-word}
+  .hero-ml{font-size:19vw;left:6vw;right:auto;bottom:auto;top:90px;transform:none!important}
+  .hero-content>p{font-size:16px}
+  .jatayu-photo img{height:300px}
+}

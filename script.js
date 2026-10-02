@@ -100,7 +100,7 @@ function chrome(){
   if(topbar&&!topbar.classList.contains('always')&&!document.querySelector('.contact-page')) topbar.classList.toggle('solid',y>window.innerHeight*.6);
   if(y<window.innerHeight*1.2){
     if(heroVideo) heroVideo.style.transform=`scale(1.08) translateY(${y*.12}px)`;
-    if(heroMl) heroMl.style.transform=`translateX(${y*-.18}px)`;
+    if(heroMl&&innerWidth>560) heroMl.style.transform=`translateX(${y*-.18}px)`;
   }
 }
 window.addEventListener('scroll',chrome,{passive:true});chrome();
