@@ -202,3 +202,93 @@ html,body{overflow-x:hidden}
     -webkit-text-stroke:1px rgba(217,185,91,.38);
   }
 }
+
+/* Contact page — Mahendrajal Magic World hero */
+.contact-hero{
+  position:relative;
+  width:100%;
+  height:min(62vh,620px);
+  min-height:380px;
+  overflow:hidden;
+  background:#07101b;
+}
+.contact-hero picture,
+.contact-hero img{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.contact-hero img{
+  object-fit:cover;
+  object-position:center center;
+}
+.contact-hero-overlay{
+  position:absolute;
+  left:clamp(18px,5vw,72px);
+  bottom:clamp(18px,4vw,48px);
+  padding:9px 15px;
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:999px;
+  background:rgba(5,14,24,.45);
+  backdrop-filter:blur(8px);
+  color:#fff;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.18em;
+}
+@media(max-width:700px){
+  .contact-hero{
+    height:auto;
+    min-height:0;
+    aspect-ratio:2 / 3;
+  }
+  .contact-hero img{
+    object-fit:cover;
+    object-position:center top;
+  }
+  .contact-hero-overlay{
+    left:14px;
+    bottom:14px;
+    font-size:9px;
+    padding:7px 11px;
+  }
+}
+
+
+
+
+/* Contact hero — final V3.1 composition */
+.contact-hero{
+  position:relative!important;
+  width:100%!important;
+  height:min(72vh,720px)!important;
+  min-height:500px!important;
+  overflow:hidden!important;
+  background:#07101b!important;
+}
+.contact-hero picture{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+}
+.contact-hero img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center 42%!important;
+}
+.contact-hero .contact-hero-overlay{
+  display:none!important;
+}
+@media(max-width:700px){
+  .contact-hero{
+    height:auto!important;
+    min-height:0!important;
+    aspect-ratio:2 / 3!important;
+  }
+  .contact-hero img{
+    object-fit:cover!important;
+    object-position:center top!important;
+  }
+}
