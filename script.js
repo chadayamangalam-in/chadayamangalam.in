@@ -116,3 +116,16 @@ if('IntersectionObserver' in window){
   }),{threshold:.6});
   counters.forEach(el=>co.observe(el));
 }else counters.forEach(el=>el.textContent=el.dataset.count);
+
+
+// V4: highlight the current chapter in the navigation
+(function(){
+  const links=[...document.querySelectorAll('.nav a[href^="#"]')];
+  if(!links.length||!('IntersectionObserver' in window)) return;
+  const map=new Map();
+  links.forEach(a=>{const t=document.querySelector(a.getAttribute('href'));if(t)map.set(t,a)});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));map.get(e.target)?.classList.add('active')}
+  }),{rootMargin:'-45% 0px -50% 0px'});
+  map.forEach((_,t)=>io.observe(t));
+})();
